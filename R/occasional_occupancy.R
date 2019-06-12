@@ -18,3 +18,7 @@ occasional_occupancy<-function(data,occup_class,abund_class=0,dont_apply_to=0){
 	
 	}
 
+	
+	return(res.mat)
+
+}
