@@ -1,0 +1,7 @@
+Package: SharedS
+Title: Assessing the influence of occasional species on shared-species metrics
+Description: SharedS provides functions to assist community ecologists in the examining the influence of occasional species on (dis)similarity metrics.
+Version: 0.1.0
+Author: Fabio Frazao (fsfrazao@gmail.com)
+Maintainer: Fabio Frazao (fsfrazao@gmail.com)
+License: GPLv3
