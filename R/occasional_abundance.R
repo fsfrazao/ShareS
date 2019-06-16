@@ -3,6 +3,10 @@
 #' This function considers any species with total abundance lower than the specied abundance class to be an occasional species.
 #' It replaces the abundance of occasional species with zeros.
 #' @param data A data.frame containing species in the columns and samples in the rows. 
+#' @param abund_class The abundance threshold. Species for which the total abundance is lower than this value are considered occasional.
+#' The function considers the total abundance (i.e.: the sum accross all samples/rows) not the abundance per sample.
+#' @param dont_apply_to A list of species (as column names or indices) to disregard.
+#' These species abundances will not be modified even if their total abundances are below the abund_class threshold.
 #' @return The community data with occasional species replaced by zeros
 #' @export
 #' @examples
@@ -13,6 +17,12 @@
 #'
 #' # Select only the abundance matrix (columns 1 and 2 contain the 'environment' and 'sample' data)
 #' comm.A <- comm.A[, 3:ncol(comm.A)]
+#'
+#' Consider all species with total abundances lower than 5 to be occasional.
+#' these will be replaced by zeros, such as sp.5, which had total abundance equal to 3
+#' 
+#' comm.A$sp5
+#' [1] 0 0 1 1 1
 #'
 #' occasional_abundance(ca[,3:ncol(ca)],5)
 #'
