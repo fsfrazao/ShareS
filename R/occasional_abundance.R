@@ -24,7 +24,7 @@
 #' comm.A$sp5
 #' [1] 0 0 1 1 1
 #'
-#' occasional_abundance(ca[,3:ncol(ca)],5)
+#' occasional_abundance(coom.A,5)
 #'
 #'     sp1 sp2 sp3 sp4 sp5 sp6 sp7 sp8 sp9 sp10 sp11 sp12 sp13 sp14 sp15 sp16
 #' [1,]   5   2   3   8   0   6   3  10   1    0    2    5    1    8    8    2
