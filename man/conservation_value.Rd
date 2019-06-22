@@ -18,9 +18,9 @@ A list with $m1, $m2 and $m3
 }
 \description{
 This function calculates 3 conservation value metrics:
-m1-> the proportion of all species that is shared between two communities;
-m2-> the proportion of all species that is unique to one of the two communities;
-m1-> the proportion of the species that occur in one of the communities that is unique to that community;
+m1-> the proportion of all species that is shared between two communities
+m2-> the proportion of all species that is unique to one of the two communities
+m3-> the proportion of the species that occur in one of the communities that is unique to that community
 }
 \examples{
 conservation_value(10,15,3)
