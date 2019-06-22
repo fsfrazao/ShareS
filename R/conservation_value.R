@@ -10,7 +10,6 @@
 #' @return A list with $m1, $m2 and $m3
 #' @export
 #' @examples
-#' conservation_value(10,15,3)
 #'  conservation_value(10,15,3)
 #' $m1
 #' [1] 0.3571429
