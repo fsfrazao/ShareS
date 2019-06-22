@@ -1,5 +1,5 @@
  data(community_data)
- test_that("test.cv_coef", {
+ test_that("test.occasional_abundace", {
  data(community_data)
  comm.A<-community_data[which(community_data$environment == "A"),]
  comm.A <- comm.A[, 3:ncol(comm.A)]
