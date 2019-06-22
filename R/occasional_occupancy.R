@@ -21,7 +21,7 @@
 #' # Select only the abundance matrix (columns 1 and 2 contain the 'environment' and 'sample' data)
 #' comm.A <- comm.A[, 3:ncol(comm.A)]
 #'
-#' Consider all species with total occupancy lower than 5 to be occasional.
+#' Consider all species with total occupancy lower than 3 to be occasional.
 #' These will be replaced by zeros, such as sp.5, sp.15, sp.21 and sp.23.
 #' 
 #'
