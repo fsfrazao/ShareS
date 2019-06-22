@@ -1,9 +1,9 @@
 #' Calculates conservation value metrics
 #'
 #' This function calculates 3 conservation value metrics:
-#' m1-> the proportion of all species that is shared between two communities;
-#' m2-> the proportion of all species that is unique to one of the two communities;
-#' m3-> the proportion of the species that occur in one of the communities that is unique to that community;
+#' m1-> the proportion of all species that is shared between two communities
+#' m2-> the proportion of all species that is unique to one of the two communities
+#' m3-> the proportion of the species that occur in one of the communities that is unique to that community
 #' @param a The number of shared species
 #' @param b The number of species unique to one of the communities
 #' @param c The number of species unique to the other community
