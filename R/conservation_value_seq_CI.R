@@ -20,6 +20,7 @@
 #' If "o", removes by occupancy class using the 'occasional_occupancy' function.
 #' If "b", removes by abundance and then occupancy, using the same occasional class for both.
 #' @return A list with $m1, $m2 and $m3 matrices, each with seq rows and 3 columns the mean value for that metric (m), the lower (2.5%) and upper (97.5%) limit of the confidence interval
+#' @importFrom stats quantile
 #' @export
 #' @examples
 #' data(community_data)
