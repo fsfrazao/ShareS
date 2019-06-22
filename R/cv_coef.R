@@ -23,6 +23,14 @@
 #'
 #' #Calculate coefficients
 #' cv_coef(comm.A, comm.B)
+#' $shared
+#' [1] 29
+#' 
+#' $unique_x
+#' [1] 0
+#' 
+#' $unique_y
+#' [1] 1
 
 cv_coef<-function(x,y){
 
