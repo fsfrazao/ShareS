@@ -1,7 +1,7 @@
 \
 
 
-conservation_value_seq_CI<-function(x_boot,y_boot,seq,removal_rule=2,occasional="a"){
+conservation_value_seq_CI<-function(x_boot,y_boot,seq,removal_rule=2,removal_routine="a"){
 
 if (dim(x_boot)[3]!=dim(y_boot)[3]) stop("x_boot and y_boot must have the same number of randomizations") else rand=dim(x_boot)[3]
 
@@ -18,7 +18,7 @@ m3<-vector(length=rand)
 
 	for (i in 1:(seq+1)){
 			
-		if (occasional=="a" & removal_rule==2){		
+		if (removal_routine=="a" & removal_rule==2){		
 			
 			for (j in 1:rand){
 				a[j]<-cv_coef(occasional_abundance(x_boot[,,j],i-1),occasional_abundance(y_boot[,,j],i-1))$shared
@@ -27,7 +27,7 @@ m3<-vector(length=rand)
 			}
 		}
 
-		if (occasional=="a" & removal_rule==1){		
+		if (removal_routine=="a" & removal_rule==1){		
 			
 			for (j in 1:rand){
 				a[j]<-cv_coef(x_boot[,,j],occasional_abundance(y_boot[,,j],i-1))$shared
@@ -36,7 +36,7 @@ m3<-vector(length=rand)
 			}
 		}	
 
-		if (occasional=="o" & removal_rule==2 & dim(x_boot)[1]>=(i-1)){		
+		if (removal_routine=="o" & removal_rule==2 & dim(x_boot)[1]>=(i-1)){		
 			
 			for (j in 1:rand){
 				a[j]<-cv_coef(occasional_occupancy(x_boot[,,j],i-1,0),occasional_occupancy(y_boot[,,j],i-1,0))$shared
@@ -46,7 +46,7 @@ m3<-vector(length=rand)
 			
 		}			
 
-		if (occasional=="o" & removal_rule==1){		
+		if (removal_routine=="o" & removal_rule==1){		
 			
 			for (j in 1:rand){
 				a[j]<-cv_coef(x_boot[,,j],occasional_occupancy(y_boot[,,j],i-1,0))$shared
@@ -55,7 +55,7 @@ m3<-vector(length=rand)
 			}
 		}			
 		
-		if (occasional=="b" & removal_rule==2 & dim(x_boot)[1]>=(i-1)){		
+		if (removal_routine=="b" & removal_rule==2 & dim(x_boot)[1]>=(i-1)){		
 			
 			for (j in 1:rand){
 				a[j]<-cv_coef(occasional_occupancy(x_boot[,,j],i-1,i-1),occasional_occupancy(y_boot[,,j],i-1,i-1))$shared
@@ -65,7 +65,7 @@ m3<-vector(length=rand)
 			
 		}			
 		
-		if (occasional=="b" & removal_rule==1){		
+		if (removal_routine=="b" & removal_rule==1){		
 			
 			for (j in 1:rand){
 				a[j]<-cv_coef(x_boot[,,j],occasional_occupancy(y_boot[,,j],i-1,i-1))$shared
