@@ -23,7 +23,6 @@ m2-> the proportion of all species that is unique to one of the two communities
 m3-> the proportion of the species that occur in one of the communities that is unique to that community
 }
 \examples{
-conservation_value(10,15,3)
  conservation_value(10,15,3)
 $m1
 [1] 0.3571429

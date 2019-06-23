@@ -4,7 +4,7 @@ Description: SharedS provides functions to assist community ecologists in the ex
 Version: 0.1.0
 Author: Fabio Frazao fsfrazao@gmail.com
 Maintainer: Fabio Frazao <fsfrazao@gmail.com>
-License: GPLv3
+License: GPL-3
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
 Suggests: 
