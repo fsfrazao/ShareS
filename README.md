@@ -10,7 +10,7 @@ The code is released under GPL-3 licence, which means it is free to use, modify 
 
 You can install SharedS directly from this repository with devtools.
 
-```
+```R
 #Install devtools if you don't already have it
 install.packages("devtools")
 #Load it
