@@ -5,6 +5,7 @@ SharedS was written in 2011, when I was an undergrad research assistant at the I
 It aimed to automate and expand on the procedures used in *Barlow et al (2010)-Measuring the conservation value of tropical primary forests: the effect of occasional species on estimates of biodiversity uniqueness*.
 
 The code is released under GPL-3 licence, which means it is free to use, modify and redistribute, but any derived code needs to be under the same licence (or a later version).
+You can find a copy of the license in this repository or check the official website: https://www.gnu.org/licenses/gpl-3.0.en.html
 
 # Installation
 
