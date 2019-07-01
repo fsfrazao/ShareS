@@ -1,5 +1,5 @@
 # SharedS
-Functions to assist community ecologists to assess the influence of occasional species on (dis)similarity metrics.
+R package with functions to assist community ecologists to assess the influence of occasional species on (dis)similarity metrics.
 
 SharedS was written in 2011, when I was an undergrad research assistant at the Insect Ecology Lab (Federal University of Lavras, Brazil) under the supervision of Dr. Julio Louzada and Dr. Jos Barlow.
 It aimed to automate and expand on the procedures used in *Barlow et al (2010)-Measuring the conservation value of tropical primary forests: the effect of occasional species on estimates of biodiversity uniqueness*.
